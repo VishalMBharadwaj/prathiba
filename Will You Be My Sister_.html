@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)file:///Users/vishalmbharadwaj/Documents/%3C!DOCTYPE%20html%3E.html%20sister%20.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Sister?</title>
+    <style>
+        body {
+            background: url('file:///Users/vishalmbharadwaj/Documents/30+%20Presentation%20Background%20Images%20for%20PowerPoint.jpeg'); /* Replace 'background.jpg' with the path to your background image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            text-align: center;
+            color: white;
+        }
+
+        #options {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .option {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+            border-radius: 10px;
+        }
+
+        #yes {
+            background-color: green;
+        }
+
+        #no {
+            background-color: red;
+        }
+
+        #yes:hover {
+            transform: scale(1.1);
+        }
+
+        #no:hover {
+            transform: scale(0.9);
+        }
+
+        #yes.clicked {
+            font-size: 30px;
+            color: black;
+            transition: all 0.5s;
+        }
+
+        #no.clicked {
+            font-size: 10px;
+            color: black;
+            transition: all 0.5s;
+        }
+
+        #excitement {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Will You Be My Sister?</h1>
+        <div id="options">
+            <div id="yes" class="option" onclick="showExcitement(&#39;yes&#39;)">Yes</div>
+            <div id="no" class="option" onclick="showExcitement(&#39;no&#39;)">No</div>
+        </div>
+        <div id="excitement">
+            <img src="./Will You Be My Sister__files/Celebrating Dancing Sticker - Celebrating Dancing - Discover &amp; Share GIFs.gif" alt="Excitement GIF" width="200">
+        </div>
+    </div>
+
+    <script>
+        function showExcitement(option) {
+            if (option === 'yes') {
+                document.getElementById('yes').classList.add('clicked');
+                document.getElementById('no').style.display = 'none';
+                document.getElementById('excitement').style.display = 'block';
+            } else {
+                document.getElementById('no').classList.add('clicked');
+                document.getElementById('yes').style.transform = 'scale(1.5)';
+            }
+        }
+    </script>
+
+
+
+</body></html>
